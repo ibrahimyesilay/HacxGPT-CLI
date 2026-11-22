@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![HacxGPT logo](https://github.com/HacxGPT-Official/HacxGPT-CLI/blob/main/img/HacxGPT.jpg)
+![HacxGPT logo](https://github.com/ibrahimyesilay/HacxGPT-CLI/blob/main/img/HacxGPT.jpg)
 
 # HacxGPT-CLI
 
@@ -12,23 +12,17 @@
 
 <!-- Badges -->
 <p>
-  <a href="https://github.com/HacxGPT-Official/HacxGPT-CLI" title="View on GitHub"><img src="https://img.shields.io/static/v1?label=HacxGPT-Official&message=HacxGPT-CLI&color=blue&logo=github" alt="HacxGPT-Official - HacxGPT-CLI"></a>
-  <a href="https://github.com/HacxGPT-Official/HacxGPT-CLI/stargazers"><img src="https://img.shields.io/github/stars/HacxGPT-Official/HacxGPT-CLI?style=social" alt="GitHub Stars"></a>
-  <a href="https://github.com/HacxGPT-Official/HacxGPT-CLI/network/members"><img src="https://img.shields.io/github/forks/HacxGPT-Official/HacxGPT-CLI?style=social" alt="GitHub Forks"></a>
+  <a href="https://github.com/ibrahimyesilay/HacxGPT-CLI" title="View on GitHub"><img src="https://img.shields.io/static/v1?label=ibrahimyesilay&message=HacxGPT-CLI&color=blue&logo=github" alt="ibrahimyesilay - HacxGPT-CLI"></a>
+  <a href="https://github.com/ibrahimyesilay/HacxGPT-CLI/stargazers"><img src="https://img.shields.io/github/stars/ibrahimyesilay/HacxGPT-CLI?style=social" alt="GitHub Stars"></a>
+  <a href="https://github.com/ibrahimyesilay/HacxGPT-CLI/network/members"><img src="https://img.shields.io/github/forks/ibrahimyesilay/HacxGPT-CLI?style=social" alt="GitHub Forks"></a>
   <br>
-  <img src="https://img.shields.io/github/last-commit/HacxGPT-Official/HacxGPT-CLI?color=green&logo=github" alt="Last Commit">
-  <img src="https://img.shields.io/github/license/HacxGPT-Official/HacxGPT-CLI?color=red" alt="License">
+  <img src="https://img.shields.io/github/last-commit/ibrahimyesilay/HacxGPT-CLI?color=green&logo=github" alt="Last Commit">
+  <img src="https://img.shields.io/github/license/ibrahimyesilay/HacxGPT-CLI?color=red" alt="License">
   <img src="https://img.shields.io/badge/version-2.1.0-blue.svg" alt="Version 2.1.0">
 </p>
 
 <h4>
-  <a href="https://github.com/HacxGPT-Official/">GitHub</a>
-  <span> · </span>
-  <a href="https://hacxgpt.com">Website</a>
-  <span> · </span>
-  <a href="https://t.me/HacxGPT">Telegram</a>
-  <span> · </span>
-  <a href="mailto:contact@hacxgpt.com">Contact</a>
+  <a href="https://github.com/ibrahimyesilay/">GitHub</a>
 </h4>
 </div>
 
@@ -49,7 +43,7 @@
 
 Here is a glimpse of HacxGPT-CLI in action:
 
-![HacxGPT Demo Screenshot](https://github.com/HacxGPT-Official/HacxGPT-CLI/blob/main/img/HacxGPT-CLI-home.png)
+![HacxGPT Demo Screenshot](https://github.com/ibrahimyesilay/HacxGPT-CLI/blob/main/img/HacxGPT-CLI-home.png)
 
 ---
 
@@ -81,7 +75,7 @@ This repository is an **open-source command-line interface** that makes powerful
 **What HacxGPT-CLI Provides:**
 - ✅ **Open-source CLI tool** for interacting with AI models
 - ✅ **Custom Local API Engine** - Zero dependency on third-party SDKs like `openai` or `litellm`
-- ✅ **Access to multiple providers** - OpenRouter, Groq, and HacxGPT API
+- ✅ **Access to multiple providers** - OpenRouter and Groq
 - ✅ **Advanced jailbreak prompts** that reduce model censorship
 - ✅ **Multi-provider support** with easy switching between services
 - ✅ **Cross-platform compatibility** - Linux, Windows, macOS, Termux
@@ -101,35 +95,6 @@ This repository is an **open-source command-line interface** that makes powerful
 - ❌ Does not collect or store your data
 - ❌ Does not require payment to use the CLI tool
 
-### 💎 HacxGPT Production Models
-
-In addition to this free CLI tool, we also offer **custom-trained production models** running on dedicated infrastructure, accessible via API subscription.
-
-**Our Production Offering:**
-
-| Feature | This Free CLI Tool | HacxGPT Production API |
-|---------|-------------------|----------------------|
-| **Technology** | Interface to public APIs with jailbreak prompts | Custom-trained models optimized for coding |
-| **Context** | Varies by provider (4k-128k) | Extended context optimized for large codebases |
-| **Approach** | Jailbreak prompts on existing models | Built uncensored from the ground up |
-| **Performance** | Depends on provider | Optimized for coding tasks |
-| **Infrastructure** | You connect to public APIs | Dedicated GPU infrastructure |
-| **Cost** | Free (BYO API keys) | Paid subscription |
-| **Support** | Community via GitHub/Telegram | Priority support |
-| **Best For** | Experimentation, learning, general use | Production coding workflows, large projects |
-
-**About HacxGPT Production Models:**
-- ✨ **Custom-trained** for coding and technical tasks
-- 🚀 **Extended context** capabilities for handling large codebases
-- 🔓 **Built uncensored** - no jailbreak prompts needed
-- ⚡ **Dedicated infrastructure** - consistent performance
-- 🎯 **Code-optimized** - better understanding of complex technical concepts
-
-**Access Production Models:**
-- 🌐 Visit [hacxgpt.com](https://hacxgpt.com) to learn more
-- 💬 Join [Telegram](https://t.me/HacxGPT) for API access and pricing
-- 📧 Contact [contact@hacxgpt.com](mailto:contact@hacxgpt.com) for enterprise
-
 ---
 
 ## ⚡ Features
@@ -137,7 +102,7 @@ In addition to this free CLI tool, we also offer **custom-trained production mod
 **This Open-Source CLI Provides:**
 
 - **Powerful AI Conversations:** Get intelligent and context-aware answers to your queries
-- **Extensive Model Support:** Access to HacxGPT production models, Groq models, and OpenRouter's library of open-source models
+- **Extensive Model Support:** Access to Groq models and OpenRouter's library of open-source models
 - **Unrestricted Framework:** System prompts engineered to reduce conventional AI limitations
 - **Easy-to-Use CLI:** Clean and simple command-line interface for smooth interaction
 - **Cross-Platform:** Tested and working on Kali Linux, Ubuntu, Windows, macOS, and Termux
@@ -153,28 +118,23 @@ HacxGPT-CLI provides a versatile interface for a wide range of models through mu
 
 | Provider | Key Models Supported | Best For |
 |----------|---------------------|----------|
-| **HacxGPT** | `hacxgpt-lightning` | Production coding, Truely uncensored |
 | **Groq** | `kimi-k2-instruct-0905`, `qwen3-32b` |
 | **OpenRouter** | `mimo-v2-flash`, `devstral-2512`, `glm-4.5-air`, `kimi-k2`, `deepseek-r1t-chimera` |
 
 
 > [!TIP]
-> **Start Free:** OpenRouter and Groq offer generous free tiers that let you try HacxGPT-CLI without any cost. Perfect for getting started and experimenting with different models, And For Advanced Models try our our models see at hacxgpt.com
+> **Start Free:** OpenRouter and Groq offer generous free tiers that let you try HacxGPT-CLI without any cost. Perfect for getting started and experimenting with different models.
 
 **Popular Models to Try:**
 
 **For Coding:**
-- `hacxgpt-lightning` (HacxGPT) - Our custom model optimized for code
 - `mimo-v2-flash` (OpenRouter) - another great model for coding.
 - `kimi-k2-instruct-0905` (Groq) - great for coding.
 - `devstral-2512` (OpenRouter) - Lastest coding model from Mistral AI
   
 **For Reasoning:**
-- `hacxgpt-lightning` (HacxGPT) - Our custom model optimized for code
 - `deepseek-r1t-chimera` (OpenRouter) - Advanced reasoning capabilities
 
-**Best Fits**
-- `hacxgpt-lightning` (HacxGPT) - Our model optimized for code and problem solving.
 ---
 
 ## 🚀 Getting Started
@@ -210,11 +170,6 @@ If you're just experimenting, try lower-cost or free-tier models where available
 3. Generate your API key
 4. Very generous free tier with fast inference
 
-**Option 3: HacxGPT API (Our Production Models)**
-- Visit [hacxgpt.com](https://hacxgpt.com) to learn about our custom models
-- Join [Telegram](https://t.me/HacxGPT) for API access and pricing
-- Get access to extended context and production-grade models
-
 ### ⚙️ Installation
 
 We provide simple, one-command installation scripts for your convenience.
@@ -223,7 +178,7 @@ We provide simple, one-command installation scripts for your convenience.
 1. Open PowerShell as Administrator.
 2. Run the following command:
    ```powershell
-   powershell -ExecutionPolicy ByPass -c "irm https://raw.githubusercontent.com/HacxGPT-Official/HacxGPT-CLI/main/scripts/install.ps1 | iex"
+   powershell -ExecutionPolicy ByPass -c "irm https://raw.githubusercontent.com/ibrahimyesilay/HacxGPT-CLI/main/scripts/install.ps1 | iex"
    ```
    This will download the installer, set up a virtual environment, and install all dependencies automatically.
 
@@ -231,7 +186,7 @@ We provide simple, one-command installation scripts for your convenience.
 1. Open your terminal
 2. Run the following command:
    ```bash
-   bash <(curl -s https://raw.githubusercontent.com/HacxGPT-Official/HacxGPT-CLI/main/scripts/install.sh)
+   bash <(curl -s https://raw.githubusercontent.com/ibrahimyesilay/HacxGPT-CLI/main/scripts/install.sh)
    ```
    This will download the installer, make it executable, and run it for you.
 
@@ -242,7 +197,7 @@ If you prefer to install manually, follow these steps:
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/HacxGPT-Official/HacxGPT-CLI.git
+   git clone https://github.com/ibrahimyesilay/HacxGPT-CLI.git
    ```
 
 2. **Navigate to the directory:**
@@ -338,8 +293,6 @@ The first time you run it, you will be prompted to enter your API key. It will b
 - **Switch models** - Use `/models` to see available options and `/model` to switch
 - **Check your config** - Use `/status` to verify your current setup
 - **Try different providers** - Each has strengths; experiment to find what works best
-  
-- **For production work** - Consider HacxGPT API at [hacxgpt.com](https://hacxgpt.com) for Best performance.
 
 ---
 
@@ -361,7 +314,7 @@ We are constantly evolving HacxGPT-CLI. Here are some of the technical milestone
 
 ## ⭐ Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=HacxGPT-Official/HacxGPT-CLI&type=Date)](https://star-history.com/#HacxGPT-Official/HacxGPT-CLI&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=ibrahimyesilay/HacxGPT-CLI&type=Date)](https://star-history.com/#ibrahimyesilay/HacxGPT-CLI&Date)
 
 ---
 
@@ -369,8 +322,8 @@ We are constantly evolving HacxGPT-CLI. Here are some of the technical milestone
 
 Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-<a href="https://github.com/HacxGPT-Official/HacxGPT-CLI/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=HacxGPT-Official/HacxGPT-CLI" />
+<a href="https://github.com/ibrahimyesilay/HacxGPT-CLI/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=ibrahimyesilay/HacxGPT-CLI" />
 </a>
 
 ### How to Contribute
@@ -415,15 +368,10 @@ Distributed under the Personal-Use Only License (PUOL) 1.0. See [`LICENSE`](LICE
 
 ## 🔗 Important Links
 
-**HacxGPT Resources:**
-- 🌐 **Website:** [hacxgpt.com](https://hacxgpt.com) - Learn about our production models
-- 💬 **Telegram Community:** [t.me/HacxGPT](https://t.me/HacxGPT) - Community support and announcements
-- 📧 **Email:** [contact@hacxgpt.com](mailto:contact@hacxgpt.com) - Direct contact
-- 🐙 **GitHub Organization:** [@HacxGPT-Official](https://github.com/HacxGPT-Official)
 
 **Project Resources:**
-- 📚 **Repository:** [HacxGPT-CLI](https://github.com/HacxGPT-Official/HacxGPT-CLI)
-- 🐛 **Issue Tracker:** [Report bugs](https://github.com/HacxGPT-Official/HacxGPT-CLI/issues)
+- 📚 **Repository:** [HacxGPT-CLI](https://github.com/ibrahimyesilay/HacxGPT-CLI)
+- 🐛 **Issue Tracker:** [Report bugs](https://github.com/ibrahimyesilay/HacxGPT-CLI/issues)
 
 ---
 
@@ -432,12 +380,7 @@ Distributed under the Personal-Use Only License (PUOL) 1.0. See [`LICENSE`](LICE
 Need help? Have questions?
 
 **Community Support:**
-- 💬 **Telegram:** Join our [community](https://t.me/HacxGPT) for help and discussions
-- 🐛 **Bug Reports:** Open an [issue](https://github.com/HacxGPT-Official/HacxGPT-CLI/issues) on GitHub
-
-**Production Support:**
-- 🌐 For HacxGPT API support: Visit [hacxgpt.com](https://hacxgpt.com)
-- 📧 For business inquiries: Email [contact@hacxgpt.com](mailto:contact@hacxgpt.com)
+- 🐛 **Bug Reports:** Open an [issue](https://github.com/ibrahimyesilay/HacxGPT-CLI/issues) on GitHub
 
 ---
 
@@ -477,9 +420,7 @@ This project stands on the shoulders of giants. We thank:
 
 **Built with ❤️ by the HacxGPT team**
 
-[⭐ Star this repo](https://github.com/HacxGPT-Official/HacxGPT-CLI) • [🐛 Report bug](https://github.com/HacxGPT-Official/HacxGPT-CLI/issues) • [💡 Request feature](https://github.com/HacxGPT-Official/HacxGPT-CLI/issues)
-
-**Want production-grade uncensored AI? Visit [hacxgpt.com](https://hacxgpt.com)**
+[⭐ Star this repo](https://github.com/ibrahimyesilay/HacxGPT-CLI) • [🐛 Report bug](https://github.com/ibrahimyesilay/HacxGPT-CLI/issues) • [💡 Request feature](https://github.com/ibrahimyesilay/HacxGPT-CLI/issues)
 
 </div>
 

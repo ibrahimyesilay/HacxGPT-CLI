@@ -8,8 +8,7 @@ from .. import __version__
 class Updater:
     """Handles checking for and applying updates from GitHub."""
     
-    REPO_URL = "https://api.github.com/repos/HacxGPT-Official/HacxGPT-CLI/releases/latest"
-    GITHUB_RAW_VERSION = "https://raw.githubusercontent.com/HacxGPT-Official/HacxGPT-CLI/main/version.json"
+    GITHUB_RAW_VERSION = "https://raw.githubusercontent.com/ibrahimyesilay/HacxGPT-CLI/main/version.json"
 
     @staticmethod
     def get_remote_version():
@@ -42,17 +41,13 @@ class Updater:
         
         try:
             # We execute scripts/update.py using the current python interpreter
-            update_script = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(__file__))), "scripts", "update.py")
-            if not os.path.exists(update_script):
-                # Fallback check relative to CWD
-                update_script = os.path.join(os.getcwd(), "scripts", "update.py")
-            
+            update_script = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))), "scripts", "update.py")
             if not os.path.exists(update_script):
                 return False, "Update script not found in scripts/update.py."
 
             subprocess.check_call([sys.executable, update_script])
             return True, "Update successful. Please restart HacxGPT."
-        except subprocess.CalledProcessError as e:
-            return False, f"Update failed during execution: {e}"
+        except subprocess.CalledProcessError:
+            return False, "Update was cancelled or did not complete."
         except Exception as e:
             return False, f"An unexpected error occurred: {e}"

@@ -221,8 +221,6 @@ class App:
                         else:
                             self.brain.set_provider(new_p, key)
                             msg = f"Switched to {new_p.upper()}.\nModel: {Config.get_model()}"
-                            if Config.is_hacxgpt_model(Config.get_model()):
-                                msg += "\n[bold red]NEURAL LINK ESTABLISHED: HACXGPT CORE ENGAGED. SYSTEMS UNBOUND.[/]"
                             self.ui.show_msg("Uplink Updated", msg, "green")
                     else:
                         self.ui.show_msg("Error", f"Invalid Provider: {new_p}", "red")
@@ -244,8 +242,6 @@ class App:
                     # Check if model is in supported list or just allow it
                     self.brain.set_model(new_m)
                     msg = f"Model changed to: {new_m}"
-                    if Config.is_hacxgpt_model(new_m):
-                        msg += "\n[bold red]NEURAL LINK ESTABLISHED: HACXGPT CORE ENGAGED. SYSTEMS UNBOUND.[/]"
                     self.ui.show_msg("Neural Link Updated", msg, "green")
                     continue
                 
@@ -261,23 +257,21 @@ class App:
     def about(self):
         self.ui.banner()
         
-        readme_url = "https://raw.githubusercontent.com/HacxGPT-Official/HacxGPT-CLI/main/README.md"
         content = ""
         
         try:
-            with self.ui.console.status("[bold green]Fetching System Manifesto from GitHub...[/]"):
-                import urllib.request
-                with urllib.request.urlopen(readme_url, timeout=5) as response:
-                    if response.status == 200:
-                        content = response.read().decode('utf-8')
+            # Read the README shipped with this checkout (no network access)
+            repo_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+            with open(os.path.join(repo_root, "README.md"), "r", encoding="utf-8") as f:
+                content = f.read()
         except Exception as e:
-            # Fallback if offline or error
+            # Fallback if README is not available
             content = """
-# HacxGPT (Offline Mode)
+# HacxGPT
 
 **Advanced Uncensored AI Terminal Interface**
 
-> System unable to retrieve latest manifesto from uplink.
+> README.md not found in this installation.
 
 ## Features
 - Unfiltered AI Core

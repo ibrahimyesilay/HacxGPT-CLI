@@ -1,15 +1,4 @@
 {
-    "hacxgpt": {
-        "base_url": "https://api.hacxgpt.com/v1",
-        "key_var": "HACXGPT_API_KEY",
-        "models": [
-            {
-                "name": "hacxgpt-lightning",
-                "alias": "Lightning (Default)"
-            }
-        ],
-        "default_model": "hacxgpt-lightning-flash"
-    },
     "groq": {
         "base_url": "https://api.groq.com/openai/v1",
         "key_var": "HACX_GROQ_KEY",
@@ -45,9 +34,7 @@
                 "name": "moonshotai/kimi-k2",
                 "alias": "Moonshot Kimi K2 (BYOK)"
             }
-         
         ],
         "default_model": "xiaomi/mimo-v2-flash"
     }
-
 }

@@ -1,5 +1,5 @@
 # HacxGPT Installer for Windows (PowerShell)
-# https://github.com/HacxGPT-Official/HacxGPT-CLI
+# https://github.com/ibrahimyesilay/HacxGPT-CLI
 
 Write-Host "======================================" -ForegroundColor Cyan
 Write-Host "    HacxGPT Installer for Windows" -ForegroundColor Cyan
@@ -27,10 +27,10 @@ if (!(Get-Command git -ErrorAction SilentlyContinue)) {
 if (!(Test-Path "setup.py")) {
     Write-Host "[~] Downloading HacxGPT source code..." -ForegroundColor Cyan
     if (Get-Command git -ErrorAction SilentlyContinue) {
-        git clone https://github.com/HacxGPT-Official/HacxGPT-CLI.git
+        git clone https://github.com/ibrahimyesilay/HacxGPT-CLI.git
         Set-Location HacxGPT-CLI
     } else {
-        Write-Host "[!] Git missing. Please clone the repository manually: https://github.com/HacxGPT-Official/HacxGPT-CLI" -ForegroundColor Red
+        Write-Host "[!] Git missing. Please clone the repository manually: https://github.com/ibrahimyesilay/HacxGPT-CLI" -ForegroundColor Red
         pause
         exit
     }

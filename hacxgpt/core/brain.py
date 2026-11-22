@@ -21,11 +21,7 @@ class HacxBrain:
             
         self._init_client()
         
-        # HacxGPT models don't need the system prompt history
-        if Config.is_hacxgpt_model(self.model):
-            self.history = []
-        else:
-            self.history = [{"role": "system", "content": self.system_prompt}]
+        self.history = [{"role": "system", "content": self.system_prompt}]
 
     def _init_client(self):
         config = Config.get_provider_config()
@@ -50,8 +46,6 @@ class HacxBrain:
         """Update the model being used"""
         self.model = model_name
         Config.ACTIVE_MODEL = model_name
-        # If switching between HacxGPT and normal models, a reset might be best, 
-        # but we'll try to just remove/add the system prompt if the history is fresh.
         if len(self.history) <= 1:
             self.reset()
 
@@ -65,10 +59,7 @@ class HacxBrain:
         self.reset() # Reset history on provider switch for safety
 
     def reset(self):
-        if Config.is_hacxgpt_model(self.model):
-            self.history = []
-        else:
-            self.history = [{"role": "system", "content": self.system_prompt}]
+        self.history = [{"role": "system", "content": self.system_prompt}]
             
     def save_session(self, name: str) -> str:
         """Save current history to a file"""

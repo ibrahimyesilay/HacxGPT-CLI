@@ -12,14 +12,14 @@ class Config:
     PROVIDERS = {}
     
     # Dynamic State (can be changed in-session)
-    ACTIVE_PROVIDER = "hacxgpt"
+    ACTIVE_PROVIDER = "groq"
     ACTIVE_MODEL = None 
     SELECTED_PROVIDER_ALIAS = None
     SELECTED_MODEL_ALIAS = None
     STREAMING = False  # Global toggle for streaming
     
     # Defaults
-    DEFAULT_PROVIDER = "hacxgpt"
+    DEFAULT_PROVIDER = "groq"
     
     # System Paths
     ENV_FILE = os.path.join(os.path.expanduser("~"), ".hacx")
@@ -58,11 +58,11 @@ class Config:
             else:
                 # Critical Fallback
                 cls.PROVIDERS = {
-                    "hacxgpt": {
-                        "base_url": "https://api.hacxgpt.com/v1",
-                        "key_var": "HACXGPT_API_KEY",
-                        "models": [{"name": "hacxgpt-lightning-flash", "alias": "Lightning Flash"}],
-                        "default_model": "hacxgpt-lightning-flash"
+                    "groq": {
+                        "base_url": "https://api.groq.com/openai/v1",
+                        "key_var": "HACX_GROQ_KEY",
+                        "models": [{"name": "qwen/qwen3-32b", "alias": "Qwen 3 32B"}],
+                        "default_model": "qwen/qwen3-32b"
                     }
                 }
         except Exception as e:
@@ -96,11 +96,6 @@ class Config:
         if not encrypted_key: return ""
         
         return Security.decrypt(encrypted_key)
-
-    @staticmethod
-    def is_hacxgpt_model(model_name: str) -> bool:
-        """Checks if the model is an internal HacxGPT model."""
-        return model_name.lower().startswith("hacxgpt")
 
     @classmethod
     def load_system_prompt(cls):
